@@ -7,11 +7,145 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%; 
+color:white}
  
 body {
   display:flex;
+     box-shadow: 1px 2px 35px rgba(133, 87, 250, 0.432);
+    border-radius:5%;   
+
+  /* flex-direction: column; */
   justify-content: center;
   align-content: center;
-  text-align: center;
+  margin:2rem auto;
+  background: linear-gradient(to right bottom,rgba(1, 0, 10, 0.941),rgba(18, 7, 162, 0.877));
   }
+
+  header{
+    background-image: url(background_andras-vas.jpg);
+    background-size: cover;
+    /* border: 1px solid; */
+    /* border-radius: 25px; */
+    /* display:flex; */
+    width:60vw;
+    color:white;
+    opacity:.8
+      }
+
+      #text{
+        font-size:3rem;
+        padding:8rem;
+        width:600px;
+        line-height: 1.5;
+    color:rgba(255, 255, 255, 0.548);
+    /* border:1px solid white; */
+
+      }
+
+
+.labels{
+    font-size: 20px;
+}
+  header>.credit{
+    font-size:2rem;
+    text-transform:capitalize;
+    color:white;
+    position:absolute;
+    bottom:10px;
+    left:15%
+}
+.credit a{
+    color:white;
+    
+}
+
+.form-layout{
+    margin:18rem auto;
+    box-shadow: 1px 2px 35px rgba(133, 87, 250, 0.432);
+    border-radius:35%;   
+ 
+
+     }
+
+ .form-section{
+        box-shadow:inset 1px 2px 22px rgba(37, 2, 150, 0.703);
+        padding:7rem;
+        height:65vh;
+        width:600px;
+           display:flex;
+           flex-direction: column;
+     justify-content: center;
+     border-radius:22px;
+    
+     }
+
+.form-content{
+    display:grid;
+    grid-template-columns: auto  ;
+    gap:3rem;  
+    margin-top:7rem;
+    
+}
+
+.form-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:2rem;
+    font-weight:900;
+    
+    /* border:1px solid  */
+}
+
+.inputs{
+   width:250px;
+   border-radius:4px;
+   border:1px solid green;
+   padding:12px;
+   text-transform: capitalize;
+   transition:all .3s ease-out
+}
+
+.inputs:focus{
+    width:260px;
+    background-color: rgba(64, 0, 255, 0.055);
+    font-weight:500;
+    color:white
+}
+.btn-form{
+    margin:3rem auto
+
+}
+
+#btn1_form{
+    border:none;
+    padding:14px;
+    font-size: 20px;
+    border-radius:15px;
+    background-color: white;
+    box-shadow: 1px 2px 10px rgba(128, 0, 128, 0.509);
+    transition:all .2s;
+         
+}
+
+#btn1_form:active{
+    transform: scale(.9);
+    box-shadow: 0px 2px 2px rgba(128, 0, 128, 0.148);
+
+}
+
+
+#have_an_account{
+    margin:3rem auto;
+    font-size:20px;
+    
+}
+
+#have_an_account a{color:white}
+
+
+
+
+
+

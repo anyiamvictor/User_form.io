@@ -14,50 +14,55 @@
 
 <body>
     <header class="header">
-        <h1 class="form">
-            Form for you
-        </h1>
-        <h3 class="form-text">
-            This is a user form that you can use for your jobs. feel free to edit and use
-        </h3>
+      
+        <div id="text">
+            This is a demo registration page! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+        </div>
+
+        <div class="credit">
+            <p> Photo credit by Andreas Van from <a href="https://unsplash.com/photos/Bd7gNnWJBkU">Unsplash</a>
+           Created by <a href="https://github.com/anyiamvictor/"><span id="me">anyiamvictor</span></a></p>
+        </div>
     </header>
 
     <main class="form-layout">
         <section class="form-section">
             <form action="" class="form-content">
                     <div class="form-item">
-                        <label for="first-name" class="labels" id="label-first_name">First Name</label>
-                        <input type="text" id="input-first_name" class="inputs" name="first-name" required>
+                        <label for="first-name" class="labels" id="label-first_name">First Name:</label>
+                        <input type="text" id="input-first_name" class="inputs" name="first-name" placeholder="Enter First Name">
                     </div>
             
                     <div class="form-item">
-                          <label for="last-name" class="labels" id="label-last_name">Last Name</label>
-                         <input type="text" id="input-last_name" class="inputs" name="last-name" required>
+                          <label for="last-name" class="labels" id="label-last_name">Last Name:</label>
+                         <input type="text" id="input-last_name" class="inputs" name="last-name"placeholder="Enter Last Name" required title="please enter your last name to proceed">
                     </div>
             
                     <div class="form-item">
-                         <label for="email" class="labels" id="label-email">Email-Address</label>
-                         <input type="email" id="input-email" class="inputs" name="email" required>
+                         <label for="email" class="labels" id="label-email">Email-Address:</label>
+                         <input type="email" id="input-email" class="inputs" name="email" placeholder="Enter  Email" required>
                      </div>
             
                     <div class="form-item">
-                         <label for="password" class="labels" id="label-password">Password</label>
+                         <label for="password" class="labels" id="label-password">Password:</label>
                          <input type="text" id="input-password" class="inputs" name="password" required>
                     </div>
             
                     <div class="form-item">
-                          <label for="confirm-password" class="labels" id="label-confirm_password">Confirm Password</label>
+                          <label for="confirm-password" class="labels" id="label-confirm_password">Confirm Password:</label>
                           <input type="text" id="input-confirm_password" class="inputs" name="confirm-password" required>
                     </div>
-
+                
+                </form>
+            
                     <div class="btn-form">
-                        <input type="button" class="btn-form" value="Create Account">
+                        <button  type="submit" id="btn1_form" >Create Account</button>
                     </div>
 
                     <p id="have_an_account">Already have an account? <a href="#" >Log in</a></p>
-            </form>
+           
 
-
+           
         </section>
 
     </main>
