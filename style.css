@@ -50,7 +50,7 @@ color:white}
     display:block;
     position:relative;
     top:11rem;
-    right:100%;
+    right:105%;
     transform:translateX(-50);
     font-size:2rem;
     text-transform:capitalize;
@@ -148,6 +148,21 @@ color:white}
 #have_an_account a{color:white}
 
 
+.error{
+    border-bottom:5px solid red;
+    animation: errors 1s ease-in-out;
+}
+
+@keyframes errors{
+ 
+  0% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+
+
 @media screen and (max-width:650px){
      .body{
          flex-direction: column;
@@ -176,7 +191,7 @@ color:white}
 
 .btn-form{
      position: relative;
-     bottom:20rem;
+     bottom:0rem;
     margin-bottom:0px;
     padding:10px;
 
@@ -184,6 +199,7 @@ color:white}
     }
 
     #have_an_account{
+        position:relative;
      bottom:18rem;
     margin-bottom:0px;
     padding:10px;

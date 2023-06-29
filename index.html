@@ -25,7 +25,7 @@
 
     <main class="form-layout">
         <section class="form-section">
-            <form action="" class="form-content">
+            <form action="" class="form-content"  id="form1">
                     <div class="form-item">
                         <label for="first-name" class="labels" id="label-first_name">First Name:</label>
                         <input type="text" id="input-first_name" class="inputs" name="first-name" placeholder="Enter First Name">
@@ -43,14 +43,16 @@
             
                     <div class="form-item">
                          <label for="password" class="labels" id="label-password">Password:</label>
-                         <input type="text" id="input-password" class="inputs" name="password" required>
+                         <input type="password" id="input-password" class="inputs" name="password" required>
                     </div>
             
                     <div class="form-item">
                           <label for="confirm-password" class="labels" id="label-confirm_password">Confirm Password:</label>
-                          <input type="text" id="input-confirm_password" class="inputs" name="confirm-password" required>
+                          <input type="password" id="input-confirm_password" class="inputs" name="confirm-password" required>
                     </div>
-                
+                  <div class="btn-form">
+                        <button  type="submit" id="btn1_form" >Create Account</button>
+                    </div>
                     
                 </form>
             
@@ -59,9 +61,7 @@
                     <p id="have_an_account">Already have an account? <a href="#" >Log in</a></p>
            
 
-             <div class="btn-form">
-                        <button  type="submit" id="btn1_form" >Create Account</button>
-                    </div>
+           
 
              
         </section>
