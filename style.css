@@ -10,13 +10,13 @@ html {
   font-size: 62.5%; 
 color:white}
  
-body {
+.body {
   display:flex;
-  border-radius:5%;   
   justify-content: center;
   align-content: center;
-  margin:2rem auto;
   background: linear-gradient(to right bottom,rgba(1, 0, 10, 0.941),rgba(14, 3, 172, 0.877),rgba(7, 1, 94, 0.877));
+  background-repeat: no-repeat;
+  background-size: cover;
   }
 
   header{
@@ -24,8 +24,8 @@ body {
     background-size: cover;
     background-position: center;
     background-origin: top;
-    width:60vw;
-    height: 100vh;
+    width:65vw;
+    height: 110vh;
     color:white;
 
       }
@@ -46,14 +46,17 @@ body {
 }
 
 
-  header>.credit{
+  .credit{
+    display:block;
+    position:relative;
+    top:11rem;
+    right:100%;
+    transform:translateX(-50);
     font-size:2rem;
     text-transform:capitalize;
     color:white;
-    position:absolute;
-    bottom:10px;
-    left:15%
 }
+
 .credit a{
     color:white;
     
@@ -94,7 +97,6 @@ body {
     font-size:2rem;
     font-weight:900;
     
-    /* border:1px solid  */
 }
 
 .inputs{
@@ -146,56 +148,75 @@ body {
 #have_an_account a{color:white}
 
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:650px){
+     .body{
+         flex-direction: column;
+         background-size:auto;
+         background-repeat:repeat;
+         width:160vw;
 
-body{
-    display:flex;
-    flex-direction: column;
-     background-image: url(background_andras-vas.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-origin: top;
-    width:100vw;
-    height: 100vh;
-    color:white;
+    }
+
+    .form-content{
+    gap:2rem;  
+    margin-top:8rem;
+       position:relative;
+    bottom:20rem;
+    margin-bottom:0px;
     
 }
 
- #text{
-        font-size:2rem;
-        padding:8rem;
-    position:absolute;
-        width:100%;
-        /* display:none; */
-    }
-   
-
 .header{
-    /* display:none; */
-    background-image: none;
-    position:relative;
-    width:100vh;
-    height:100vh;
-    margin-bottom:0;
-}
-
-.form-layout{
-    position:absolute;
-    top:20rem;
-    margin:0px;
-
+    width:100%;
+    height:auto;
+    margin-bottom:0px;
+    padding:10px;
 
 }
 
-  
-  header>.credit{
- transform:translatex(30%)
+.btn-form{
+     position: relative;
+     bottom:20rem;
+    margin-bottom:0px;
+    padding:10px;
 
-  }   
+
+    }
+
+    #have_an_account{
+     bottom:18rem;
+    margin-bottom:0px;
+    padding:10px;
+
+    }
+
+    
+  .credit{
+    top:0rem;
+    right:0rem;
+}
 
 }
 
 
+@media screen and (min-width: 651px) and (max-width:1190px){
 
+    body{
+        background:rgb(2, 2, 134);
+    }
+    .header{
+        width:100%
+    }
 
+    .body{
+        margin:20rem auto;
+        width:160vw;
+        height:auto;
+
+    }
+
+    .credit{
+        top:30rem;
+        right:30rem;
+    }
+}
